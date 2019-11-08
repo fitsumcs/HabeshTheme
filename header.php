@@ -8,9 +8,8 @@
     <?php wp_head();?>
 </head>
 <body>
+<?php if(is_front_page()): get_search_form( ); endif?>
 <nav>
-
 <?php wp_nav_menu( );?>
-
 </nav>
     
