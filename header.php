@@ -8,6 +8,8 @@
     <?php wp_head();?>
 </head>
 <body>
+    <a href="<?php echo home_url();?>"><h1><?php bloginfo( 'name' ) ?></h1></a>
+    <h2><?php bloginfo( 'description' ) ?></h2>
 <?php if(is_front_page()): get_search_form( ); endif?>
 <nav>
 <?php wp_nav_menu( );?>
