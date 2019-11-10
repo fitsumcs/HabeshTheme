@@ -12,9 +12,7 @@
     <h2><?php bloginfo( 'description' ) ?></h2>
 <?php if(is_front_page()): get_search_form( ); endif?>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  
-  <div class="collapse navbar-collapse" id="navbarNav">
+
      
   <?php 
         
@@ -23,15 +21,11 @@
             'menu_id'        => 'primary-menu',
             'container'      => false,
             'depth'          => 2,
-            'menu_class'     => 'nav',
 
         );
         wp_nav_menu( $topnav);
         
         ?>
-
-      
-  </div>
 </nav>
 
 
