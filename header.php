@@ -11,7 +11,40 @@
     <a href="<?php echo home_url();?>"><h1><?php bloginfo( 'name' ) ?></h1></a>
     <h2><?php bloginfo( 'description' ) ?></h2>
 <?php if(is_front_page()): get_search_form( ); endif?>
-<nav>
-<?php wp_nav_menu( );?>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  
+  <div class="collapse navbar-collapse" id="navbarNav">
+     
+  <?php 
+        
+        $topnav = array(
+            'theme_location' => 'top-menu',
+            'menu_id'        => 'primary-menu',
+            'container'      => false,
+            'depth'          => 2,
+            'menu_class'     => 'nav',
+
+        );
+        wp_nav_menu( $topnav);
+        
+        ?>
+
+      
+  </div>
 </nav>
+
+
+
+
+
+
+
+    
+    
+   
+   
+    
+
+
     
